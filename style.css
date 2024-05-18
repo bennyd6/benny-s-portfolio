@@ -22,7 +22,7 @@ body, html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("bg.png");
+    background-image: url("files/bg.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ body, html {
 #About{
     width: 100vw;
     min-height: 100vh;
-    background-image: url("8.png");
+    background-image: url("files/8.png");
     background-size: cover;
     object-fit: fill;
     display: flex;
