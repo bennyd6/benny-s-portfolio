@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'MyCustomFont';
     src: url('Evogria.otf') format('woff2'), /* Modern Browsers */
-         url('Evogria.otf') format('woff');   /* Older Browsers */
+    url('Evogria.otf') format('woff');   /* Older Browsers */
     font-weight: normal;
     font-style: normal;
 }
@@ -17,6 +17,16 @@ body, html {
     overflow-x: hidden;
     height: 100%;
     background: #18143B;
+}
+h1{
+    font-family: 'MyCustomFont', 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    animation: sr3 ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+    /* margin-top: 5%; */
 }
 
 #main-ctn {
@@ -468,5 +478,77 @@ body, html {
 #projects{
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#projects-ctn{
+    min-height: 80%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.projects-ctn-ctn{
+    height: 50%;
+    width: 22%;
     background-color: #18143B;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #e142e3 0px 0px 10px, #e142e3 0px 0px 0px, #e142e3 0px 10px 10px;
+    /* box-shadow: #e142e3 0px 20px 30px -10px; */
+    /* box-shadow: #e142e3 0px 5px 15px; */
+}
+
+.img1{
+    background-color: #363350;
+    border-radius: 25px;
+    height: 200px;
+    animation: sr3 ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+.git{
+    background-color: none;
+    /* height: 50px; */
+    width: 50px;
+    object-fit: contain;
+}
+
+.projects-ctn-ctn-gh{
+    min-width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.projects-ctn-ctn h2{
+    color: #ffffff;
+    text-align: center;
+    animation: sr3 ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    /* font-size: ; */
+}
+
+
+/* ************************************************************************************************************************************* */
+
+
+
+#contact{
+    width: 100vw;
+    min-height: 100vh;
 }
