@@ -602,9 +602,119 @@ input:focus,textarea:focus{
     background-color: transparent;
     color: #fff;
     border: 1px solid white;
-
+    
 }
 
 .subbtn:hover{
     cursor: pointer;
+}
+
+
+/* ************************************************************************************************************************************* */
+
+
+
+@media only screen and (max-width: 600px) {
+    #navbar{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+    }
+    #intro{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    #intro span{
+        font-size: 80px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    #about-heading,#skills-heading{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    #about-ctn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #me{
+        animation: none;
+        border-radius: 5px;
+        width: 150px;
+    }
+
+    #parah{
+        font-size: 15px;
+        animation: none;
+    }
+
+    #parah span{
+        font-size: 20px;
+    }
+
+    #dwnld{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .timeline{
+        margin: 50px auto;
+    }
+
+    .timeline::after{
+        left:31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box{
+        font-size: 13px;
+    }
+
+    .text-box small{
+        margin-bottom: 10px;
+    }
+
+    .right{
+        left: 0;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .left-arrow, .right-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+    }
+
+    #projects-ctn{
+        width: 95%;
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .projects-ctn-ctn{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    form{
+        width: 300px;
+    }
+
+
 }
