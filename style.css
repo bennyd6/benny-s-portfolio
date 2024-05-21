@@ -505,7 +505,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: #e142e3 0px 0px 10px, #e142e3 0px 0px 0px, #e142e3 0px 10px 10px;
+    box-shadow: #ffffff 0px 2px 8px 0px;
     /* box-shadow: #e142e3 0px 20px 30px -10px; */
     /* box-shadow: #e142e3 0px 5px 15px; */
 }
@@ -551,4 +551,60 @@ h1{
 #contact{
     width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+#contact-heading{
+    padding-top: 10px;
+}
+
+form{
+    width:50%;
+    height: 70%;
+    box-shadow: #e142e3 0px 2px 5px -1px, #e142e3 0px 1px 3px -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+input,textarea{
+    width: 99%;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #ffffff;
+    box-shadow: #ffffff 0px 0px 5px 0px, #ffffff 0px 0px 0px 1px;
+}
+
+
+input:focus,textarea:focus{
+    box-shadow: #e142e3 2px 2px 2px 2px, #e142e3 2px 2px 2px 2px;
+}
+
+
+.subbtn{
+    width:100px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+
+}
+
+.subbtn:hover{
+    cursor: pointer;
 }
