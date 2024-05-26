@@ -40,3 +40,44 @@ ScrollReveal().reveal('#navbar', { delay: 500,origin: 'right' });
 //         }
 //     }
 // }
+
+// function submitForm() {
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const mobileNumber = document.getElementById('mobileNumber').value;
+//     const message = document.getElementById('message').value;
+
+//     const contact = { name, email, mobileNumber, message };
+
+//     fetch('http://localhost:8080/api/contact/submit', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(contact),
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         alert('Form submitted successfully!');
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+// }
+
+
+
+// function sendEmail(){
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "cadheshbenny@gmail.com",
+//         Password : "password",
+//         To : 'cadheshbenny@gmail.com',
+//         From : document.querySelector("#email"),
+//         Subject : "This is the subject",
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+
+// }

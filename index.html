@@ -170,14 +170,20 @@
     <section id="contact">
         <h1 id="contact-heading">Contact me</h1>
         <br>
-        <form action="" class="content">
-            <input type="text" name="name" placeholder="Enter your name" id="">
-            <input type="email" name="email" placeholder="Enter your email">
+        <form class="content" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4107011d-26ec-47a4-83a4-e266eca9736e">
+            <!-- <input type="text" name="name" placeholder="Enter your name" id="">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
             <input type="name3" placeholder="Enter your mobile number" id="">
-            <textarea name="tell" id="" placeholder="Tell Something"></textarea>
+            <textarea name="tell" id="" placeholder="Tell Something"></textarea> -->
+            <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+            
             <button type="submit" class="subbtn">Submit</button>
         </form>
     </section>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="script.js"></script>
 </body> 
 </html>
