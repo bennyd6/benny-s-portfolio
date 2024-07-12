@@ -26,20 +26,20 @@ ScrollReveal().reveal('#navbar', { delay: 500,origin: 'right' });
 
 // window.addEventListener('scroll',rev);
 
-// function rev(){
-//     var reveals=document.querySelectorAll('.rev');
-//     for(var i=0;i<rev.length;i++){
-//         var windowheight=window.innerHeight;
-//         var revealtop=reveals[i].getBoundingClientRect().top;
-//         var revealpoint= 150;
-//         if(revealtop<windowheight-revealpoint){
-//             reveals[i].classList.add('active');
-//         }
-//         else{
-//             reveals[i].classList.remove('active');
-//         }
-//     }
-// }
+function rev(){
+    var reveals=document.querySelectorAll('.rev');
+    for(var i=0;i<rev.length;i++){
+        var windowheight=window.innerHeight;
+        var revealtop=reveals[i].getBoundingClientRect().top;
+        var revealpoint= 150;
+        if(revealtop<windowheight-revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
 
 // function submitForm() {
 //     const name = document.getElementById('name').value;

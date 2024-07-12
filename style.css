@@ -243,7 +243,7 @@ h1{
 #parah{
     color: #ffffff;
     font-size: 25px;
-    text-align: justify;
+    /* text-align: j; */
     font-weight: 500;
     animation: slideRight 1s ease forwards;
     animation: sr2 ease-in-out;
@@ -576,10 +576,12 @@ form{
 
 input{
     height: 50px;
+    padding-left: 10px;
 }
 
 textarea{
     height: 150px;
+    padding: 10px;
     resize: none;
 }
 
@@ -614,6 +616,33 @@ input:focus,textarea:focus{
 
 
 
+footer{
+    border-top: 1px solid white;
+    padding-top: 50px;
+    width: 100vw;
+    height: 22vh;
+    background-color: #1e1e1e;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************************************************************************* */
 @media only screen and (max-width: 600px) {
     #navbar{
         width: 100%;
@@ -718,3 +747,4 @@ input:focus,textarea:focus{
 
 
 }
+
