@@ -41,29 +41,29 @@ function rev(){
     }
 }
 
-// function submitForm() {
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const mobileNumber = document.getElementById('mobileNumber').value;
-//     const message = document.getElementById('message').value;
+function submitForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobileNumber = document.getElementById('mobileNumber').value;
+    const message = document.getElementById('message').value;
 
-//     const contact = { name, email, mobileNumber, message };
+    const contact = { name, email, mobileNumber, message };
 
-//     fetch('http://localhost:8080/api/contact/submit', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(contact),
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         alert('Form submitted successfully!');
-//     })
-//     .catch(error => {
-//         console.error('Error:', error);
-//     });
-// }
+    fetch('http://localhost:8080/api/contact/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contact),
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Form submitted successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
 
 
 
